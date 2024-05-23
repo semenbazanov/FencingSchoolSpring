@@ -1,0 +1,79 @@
+### add Apprentice
+POST localhost:8080/apprentice
+content-type:application/json
+
+{
+  "surname": "Iv",
+  "name": "Iv",
+  "patronymic": "Iv",
+  "phoneNumber": "892192345"
+}
+
+### add Apprentice
+POST localhost:8080/apprentice
+content-type:application/json
+
+{
+  "surname": "Petrov",
+  "name": "Petr",
+  "patronymic": "Petrovich",
+  "phoneNumber": "89219234716"
+}
+
+### add Apprentice
+POST localhost:8080/apprentice
+content-type:application/json
+
+{
+  "surname": "Petrov",
+  "name": "Petr",
+  "patronymic": "Petrovich",
+  "phoneNumber": "89219743452"
+}
+
+### add Apprentice
+POST localhost:8080/apprentice
+content-type:application/json
+
+{
+  "surname": "Smirnov",
+  "name": "Sidr",
+  "patronymic": "Denisovich",
+  "phoneNumber": "89219907283"
+}
+
+### get by id
+GET localhost:8080/apprentice/2
+
+### get by incorrect id
+GET localhost:8080/apprentice/4
+
+### get all
+GET localhost:8080/apprentice
+
+### delete by id
+DELETE localhost:8080/apprentice/3
+
+### update incorrectly
+POST localhost:8080/apprentice
+content-type:application/json
+
+{
+  "id": 2,
+  "surname": "Smirnov",
+  "name": "Sidr",
+  "patronymic": "Denisovich",
+  "phoneNumber": "89219907283"
+}
+
+### update
+PUT localhost:8080/apprentice
+content-type:application/json
+
+{
+  "id": 27,
+  "surname": "Petrov",
+  "name": "Petr",
+  "patronymic": "Petrovich",
+  "phoneNumber": "89219234715"
+}

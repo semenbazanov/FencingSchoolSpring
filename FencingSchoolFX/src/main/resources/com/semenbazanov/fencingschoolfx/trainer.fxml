@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.semenbazanov.fencingschoolfx.controllers.TrainerController">
+   <children>
+      <Label layoutX="58.0" layoutY="129.0" text="Фамилия" />
+      <Label layoutX="58.0" layoutY="166.0" text="Имя" />
+      <Label layoutX="58.0" layoutY="206.0" text="Отчество" />
+      <Label layoutX="58.0" layoutY="247.0" text="Опыт работы" />
+      <Button layoutX="58.0" layoutY="300.0" mnemonicParsing="false" onAction="#toUpdateTrainer" prefHeight="26.0" prefWidth="231.0" text="Обновить данные тренера" />
+      <Button layoutX="58.0" layoutY="359.0" mnemonicParsing="false" onAction="#toDeleteTrainer" prefHeight="26.0" prefWidth="231.0" text="Удалить тренера" />
+      <TableView fx:id="scheduleView" layoutX="306.0" layoutY="106.0" prefHeight="200.0" prefWidth="458.0" />
+      <TextField fx:id="surname" layoutX="140.0" layoutY="125.0" />
+      <TextField fx:id="name" layoutX="140.0" layoutY="162.0" />
+      <TextField fx:id="patronymic" layoutX="140.0" layoutY="202.0" />
+      <TextField fx:id="experience" layoutX="140.0" layoutY="243.0" />
+      <Button layoutX="311.0" layoutY="360.0" mnemonicParsing="false" onAction="#toAddTraining" prefHeight="26.0" prefWidth="142.0" text="Добавить запись" />
+      <Button layoutX="509.0" layoutY="360.0" mnemonicParsing="false" onAction="#toDeleteTraining" prefHeight="26.0" prefWidth="142.0" text="Удалить запись" />
+   </children>
+</AnchorPane>

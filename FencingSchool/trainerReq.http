@@ -1,0 +1,10 @@
+###
+POST localhost:8080/trainer
+content-type: application/json
+
+{
+  "surname": "Smirnov",
+  "name": "Sidr",
+  "patronymic": "Denisovich",
+  "experience": 10
+}

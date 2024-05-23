@@ -1,0 +1,14 @@
+###
+POST localhost:8080/trainer_schedule/1?dayWeek=monday&start=11:00&end=13:00
+
+###
+POST localhost:8080/trainer_schedule/1?dayWeek=friday&start=09:00&end=13:00
+
+###
+POST localhost:8080/trainer_schedule/3?dayWeek=friday&start=09:00&end=13:00
+
+###
+GET localhost:8080/trainer_schedule/1
+
+###
+DELETE localhost:8080/trainer_schedule/1?dayWeek=friday
