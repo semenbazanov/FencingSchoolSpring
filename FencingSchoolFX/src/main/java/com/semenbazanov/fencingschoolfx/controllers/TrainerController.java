@@ -63,6 +63,7 @@ public class TrainerController implements ControllerData<Trainer> {
 
     public void toUpdateTrainer(ActionEvent actionEvent) {
         this.trainer.setName(this.name.getText());
+        this.trainer.setSurname(this.surname.getText());
         this.trainer.setPatronymic(this.patronymic.getText());
         this.trainer.setExperience(Integer.parseInt(this.experience.getText()));
         try {

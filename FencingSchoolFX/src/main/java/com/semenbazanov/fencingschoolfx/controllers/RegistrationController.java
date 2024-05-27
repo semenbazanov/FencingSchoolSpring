@@ -42,6 +42,11 @@ public class RegistrationController {
     }
 
     public void toAuthorization(ActionEvent actionEvent) {
-        App.closeWindow(actionEvent);
+        try {
+            App.openWindow("authorization.fxml", "Authorization", null);
+            App.closeWindow(actionEvent);
+        } catch (IOException e) {
+            App.showAlert("Error", e.getMessage(), Alert.AlertType.ERROR);
+        }
     }
 }

@@ -34,14 +34,15 @@ public class AuthorizationController {
             } else {
                 App.openWindow("registration.fxml", "registration", null);
             }
-        } catch (IOException e) {
-            App.showAlert("Error", "Пользователь не существует", Alert.AlertType.ERROR);
+        } catch (IllegalArgumentException | IOException e) {
+            App.showAlert("Error", e.getMessage(), Alert.AlertType.ERROR);
         }
     }
 
     public void toRegister(ActionEvent actionEvent) {
         try {
             App.openWindow("registration.fxml", "registration", null);
+            App.closeWindow(actionEvent);
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }
